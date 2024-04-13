@@ -1,10 +1,10 @@
 import {RouteObject} from "react-router/dist/lib/context";
-import App from "./App.tsx";
+import {Dashboard} from "./views/Dashboard.tsx";
 
 export const routes: RouteObject[] = [
   {
     path: "/",
-    element: <App/>,
+    element: <Dashboard/>,
   },
   {
     path: '/form',
