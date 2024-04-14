@@ -15,7 +15,7 @@ export const Dashboard = () => {
   return (
     <Grid container margin={4} spacing={2} style={{ marginTop: 60 }}>
       {characteristics.map((characteristic) => (
-        <Grid item xs={4} key={characteristic.title}>
+        <Grid item xs={12} md={6} lg={4} key={characteristic.title}>
           <CharacteristicCard {...characteristic}/>
         </Grid>
       ))}
