@@ -449,14 +449,13 @@ const customize = {
 
 export default function LineDataset() {
   return (
-    // <div style={{ padding: '2rem' }}>
     <LineChart
       xAxis={[
         {
           dataKey: 'year',
           valueFormatter: (value) => value.toString(),
           min: 1990,
-          max: 2022,
+          max: 2023,
         },
       ]}
       series={Object.keys(keyToLabel).map((key) => ({
@@ -469,6 +468,5 @@ export default function LineDataset() {
       dataset={worldElectricityProduction}
       {...customize}
     />
-      // </div>
   );
 }

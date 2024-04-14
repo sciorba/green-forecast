@@ -9,7 +9,6 @@ const Stats = () => {
           <DatePicker label="Uncontrolled picker" defaultValue={dayjs('2024-03-10')} />
           <DatePicker label="Uncontrolled picker" defaultValue={dayjs('2042-04-10')} />
       </div>
-
       <LineDataset/>
     </div>
   );
