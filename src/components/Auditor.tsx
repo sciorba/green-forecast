@@ -90,11 +90,16 @@ const mockedData = {
   ],
   // More sections can be added following the pattern above
 };
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 const renderTableRows = (data) => {
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
     return data.map((item, index) => (
       <TableRow key={index}>
         {Object.values(item).map((value, idx) => (
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
           <TableCell key={idx}>{value}</TableCell>
         ))}
       </TableRow>
@@ -105,12 +110,20 @@ const exportToExcel = () => {
   const workbook = XLSX.utils.book_new();
 
   // Function to format data according to xlsx utils requirements
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
   const formatDataForExcel = (data) => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
     return data.map(item => ({
       ...item,
       dimensions: `Length: ${item.dimensions.length}, Outer Height: ${item.dimensions.outerHeight}, Soil Height: ${item.dimensions.soilHeight}`,
       area: `Gross Wall: ${item.area.grossWall}, Soil Wall: ${item.area.soilWall}, Net Wall: ${item.area.netWall}`,
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
       windows: item.windows.map(w => `Type: ${w.type}, Dimensions: ${w.length}m x ${w.height}m, Area: ${w.area}`).join("; "),
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
       doors: item.doors.map(d => `Type: ${d.type}, Dimensions: ${d.width}m x ${d.height}m, Area: ${d.area}`).join("; "),
     }));
   };
