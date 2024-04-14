@@ -157,7 +157,7 @@ const exportToExcel = () => {
 
 
 return (
-        <div style={{width: '100%', marginTop: '100px'}}>
+        <div style={{width: '100%', marginTop: '100px', marginLeft:'40px'}}>
             <Typography variant="h4" gutterBottom>
                 Building Details
             </Typography>
