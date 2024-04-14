@@ -14,51 +14,61 @@ export const characteristics: Characteristic[] = [
   {
     Icon: HomeTwoToneIcon,
     title: 'Housing quality',
+    reportDate: 'Established in 2023',
     characteristic: 'Serious defects'
   },
   {
     Icon: OfflineBoltTwoToneIcon,
     title: 'Energy',
-    characteristic: 'Enough'
+    characteristic: 'Enough',
+    reportDate: 'Established in 2023',
   },
   {
     Icon: ChaletTwoToneIcon,
     title: 'Insulation',
-    characteristic: 'Mediocre'
+    characteristic: 'Mediocre',
+    reportDate: 'Established in 2023',
   },
   {
     Icon: BuildCircleTwoToneIcon,
     title: 'Installations',
-    characteristic: 'All inspected'
+    characteristic: 'All inspected',
+    reportDate: 'Established in 2023',
   },
   {
     Icon: PublicTwoToneIcon,
     title: 'Soil',
-    characteristic: 'Included in register'
+    characteristic: 'Included in register',
+    reportDate: 'Established in 2023',
   },
   {
     Icon: SolarPowerTwoToneIcon,
     title: 'Solar potential',
-    characteristic: 'Usable'
+    characteristic: 'Usable',
+    reportDate: 'Established in 2023',
   },
   {
     Icon: WorkspacePremiumTwoToneIcon,
     title: 'Permits',
-    characteristic: null
+    characteristic: null,
+    reportDate: null,
   },
   {
     Icon: FloodTwoToneIcon,
     title: 'Flood risk',
-    characteristic: 'Small chance'
+    characteristic: 'Small chance',
+    reportDate: 'Established in 2023',
   },
   {
     Icon: BathroomTwoToneIcon,
     title: 'Water and sewerage',
-    characteristic: 'Sewerage available'
+    characteristic: 'Sewerage available',
+    reportDate: null,
   },
   {
     Icon: SpaTwoToneIcon,
     title: 'Teal level',
-    characteristic: 'Not known'
+    characteristic: 'Not known',
+    reportDate: null,
   },
 ]

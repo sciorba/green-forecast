@@ -7,6 +7,7 @@ import {characteristics} from "../constants.tsx";
 export interface Characteristic {
   Icon: OverridableComponent<SvgIconTypeMap> & { muiName: string };
   title: string;
+  reportDate: string | null;
   characteristic: string | null;
 }
 
