@@ -66,6 +66,14 @@ export default function ResponsiveDrawer(props: Props) {
           <ListItemText primary="Statistics" />
         </ListItemButton>
       </ListItem>
+      <ListItem disablePadding component={Link} to='/audit'>
+        <ListItemButton>
+          <ListItemIcon>
+            <BrandingWatermarkTwoToneIcon/>
+          </ListItemIcon>
+          <ListItemText primary="Audit Report"/>
+        </ListItemButton>
+      </ListItem>
       </List>
     </div>
   );
