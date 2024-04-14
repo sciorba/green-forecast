@@ -14,6 +14,7 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import {Link} from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -49,15 +50,15 @@ export default function ResponsiveDrawer(props: Props) {
     <div>
       <Toolbar />
       <List>
-          <ListItem disablePadding>
+          <ListItem disablePadding component={Link} to="/">
             <ListItemButton>
               <ListItemIcon>
                 <DashboardTwoToneIcon />
               </ListItemIcon>
-              <ListItemText primary="Dashboard" />
+              <ListItemText primary="Dashboard"/>
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding component={Link} to="/statistics">
         <ListItemButton>
           <ListItemIcon>
             <BrandingWatermarkTwoToneIcon/>
@@ -73,10 +74,10 @@ export default function ResponsiveDrawer(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', marginBottom: 20 }}>
       <CssBaseline />
       <AppBar
-        position="sticky"
+        position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
